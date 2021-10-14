@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  kurbanov's blog 
+{% endblock title %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'blog/post.css' %}">
+  <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock css_files %}
+
+{% block content %}
+
+
+
+  <section id="welcome">
+    <header>
+      <img src="{% static 'blog/images/rasuljon.jpg' %}" alt="Kurbanov-blog`s author">
+    </header>
+    <p>Assalamu alaikum, in fron of you standing guy whose name is Rasul Kurbanov</p>
+  </section>
+
+  <section id="latest-posts">
+    <h2>My latest thoughts</h2>
+    <ul>
+      {% for post in posts %}
+        {% include 'blog/includes/post.html' %}
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id='about'>
+    <h2>What am I busy with?!</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt beatae veniam et, aliquid sunt vitae distinctio perspiciatis quas suscipit, quis est. Id, doloribus atque optio eos doloremque quas obcaecati quasi.</p>
+
+    <p>
+      Iste quos placeat temporibus rem nesciunt quas, possimus molestias veniam nisi sunt aspernatur dolores saepe quasi nihil, veritatis, ducimus voluptatum soluta commodi.
+    </p>
+
+  </section>
+
+
+{% endblock content %}
