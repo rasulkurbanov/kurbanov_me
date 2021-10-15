@@ -64,7 +64,7 @@ main {
 #comment-form {
   margin: 3rem auto;
   width: 90%;
-  max-width: 20rem;
+  max-width: 40rem;
   border-radius: 12px;
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
@@ -92,4 +92,26 @@ main {
   font: inherit;
   padding: 0.25rem;
   border-radius: 6px;
+}
+
+
+#comments {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 60rem;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+}
+
+.read-later {
+  margin: 2rem 0;
+}
+
+.read-later button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.5rem 2rem;
+  font: inherit;
 }
